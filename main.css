@@ -130,6 +130,7 @@
 
 .course-process {
   margin-top: 100px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -149,29 +150,31 @@
   height: 140px;
 }
 
-.container-course__youtube,
-.container-course__youtube-logo {
+.container-process__youtube-logo {
   width: 239px;
   height: 239px;
   z-index: var(--z-index);
-  margin-top: 30px;
+  position: relative;
+  bottom: 40px;
+  left: 70px;
 }
 
-.container-course__feedback,
-.container-course__feedback-logo {
+.container-process__feedback-logo {
   z-index: var(--z-index);
-  margin-top: 10px;
   width: 304px;
   height: 304px;
+  position: relative;
+  bottom: 90px;
+  left: 60px;
 }
 
-.container-course__telegram-logo,
-.container-course__telegram {
+.container-process__telegram-logo {
   width: 168px;
   height: 168px;
   z-index: var(--z-index);
-  margin-right: 30px;
-  margin-top: 30px;
+  position: relative;
+  bottom: 10px;
+  left: 70px;
 }
 
 .container-process {
@@ -191,6 +194,8 @@
   border: 2px solid var(--border-color-yellow);
   border-radius: 16px;
   padding: 21px 0px 21px 18px;
+  position: relative;
+  bottom: 120px;
 }
 
 .container-process__block-text {
@@ -234,6 +239,8 @@
   border-radius: 16px;
   padding-top: 21px;
   padding-left: 18px;
+  position: relative;
+  bottom: 185px;
 }
 
 .container-process__feedback-text {
@@ -277,6 +284,8 @@
   border: 2px solid var(--border-color-yellow);
   border-radius: 16px;
   padding: 21px 0px 21px 18px;
+  position: relative;
+  bottom: 50px;
 }
 
 .container-process__telegram-text {
@@ -308,7 +317,7 @@
 
 .popular-course-title {
   text-align: center;
-  margin: 60px 0px 32px;
+  margin: 180px 0px 32px;
 }
 
 .popular-course-title__h2 {
@@ -321,6 +330,7 @@
 .block-course {
   display: flex;
   gap: 32px;
+  margin-top: 30px;
 }
 
 .block-course__base,
@@ -730,24 +740,51 @@
     line-height: var(--h1-line-height);
   }
 
-  .container-course__youtube,
-  .container-course__youtube-logo {
-    width: 160px;
-    height: 160px;
-  }
-
-  .container-course__feedback,
-  .container-course__feedback-logo {
-    width: 190px;
-    height: 190px;
-    margin-top: 20px;
-  }
-
-  .container-course__telegram,
-  .container-course__telegram-logo {
-    width: 100px;
-    height: 100px;
+  .container-process {
     margin-top: 40px;
+    gap: 0;
+  }
+
+  .container-process__youtube-logo {
+    width: 174px;
+    height: auto;
+    position: absolute;
+    left: 40px;
+    bottom: 70px;
+  }
+
+  .container-process__feedback-logo {
+    max-width: 170px;
+    height: auto;
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+  }
+
+  .container-process__telegram-logo {
+    width: 120px;
+    height: auto;
+    position: relative;
+    bottom: 30px;
+    left: 60px;
+  }
+
+  .container-process__youtube-lessons {
+    position: relative;
+    bottom: 45px;
+  }
+  .container-process__telegram-materials {
+    position: relative;
+    bottom: 45px;
+  }
+
+  .container-process__block-text {
+    padding-bottom: 20px;
+  }
+
+  .container-process__feedback {
+    position: relative;
+    bottom: 45px;
   }
 
   .container-process__block-text,
@@ -764,6 +801,8 @@
     width: 20vw;
     height: 20vh;
     padding: 10px 10px;
+    position: absolute;
+    top: 50px;
   }
 
   .container-process__youtube-h6,
@@ -781,6 +820,10 @@
     font-weight: var(--font-weught);
     font-size: var(--link-size16);
     line-height: var(--line-height-150);
+  }
+
+  .popular-course-title {
+    margin-top: 30px;
   }
 
   .popular-course-title__h2 {
@@ -899,7 +942,7 @@
   .container-buttons__buttons-send {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .container-buttons__username-send,
@@ -914,6 +957,62 @@
   .container-buttons__username,
   .container-buttons__send {
     width: 222px;
+  }
+}
+
+@media (max-width: 1012px) {
+  .container-process__youtube-logo {
+    left: 30px;
+  }
+
+  .container-process__feedback-logo {
+    left: 40px;
+  }
+
+  .container-process__telegram-logo {
+    left: 40px;
+  }
+}
+
+@media (max-width: 920px) {
+  .container-process__youtube-logo {
+    left: 20px;
+  }
+
+  .container-process__feedback-logo {
+    left: 30px;
+  }
+
+  .container-process__telegram-logo {
+    left: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-process__youtube-logo {
+    left: 10px;
+  }
+
+  .container-process__feedback-logo {
+    left: 30px;
+  }
+
+  .container-process__telegram-logo {
+    left: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container-process__youtube-logo {
+    left: 5px;
+  }
+
+  .container-process__feedback-logo {
+    left: 10px;
+  }
+
+  .container-process__telegram-logo {
+    left: 10px;
   }
 }
 
@@ -1004,7 +1103,7 @@
   }
 
   .course-process {
-    margin: 60px 0px 0px;
+    margin: 60px 0px 60px;
   }
 
   .course-process__title {
@@ -1023,25 +1122,27 @@
     gap: 100px;
   }
 
-  .container-course__youtube,
-  .container-course__youtube-logo {
+  .container-process__youtube-logo {
     width: 200px;
     height: 200px;
-    margin-top: 5px;
+    position: relative;
+    left: 240px;
   }
 
-  .container-course__feedback,
-  .container-course__feedback-logo {
-    width: 220px;
-    height: 220px;
-    margin-top: 40px;
+  .container-process__feedback-logo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 80px;
+    left: 250px;
   }
 
-  .container-course__telegram-logo,
-  .container-course__telegram {
+  .container-process__telegram-logo {
     width: 160px;
     height: 160px;
-    margin-top: 80px;
+    position: relative;
+    bottom: 60px;
+    left: 240px;
   }
 
   .container-process__youtube-h6,
@@ -1243,5 +1344,89 @@
     font-weight: var(--font-size-bold);
     font-size: var(--link-size16);
     line-height: var(--line-height-150);
+  }
+}
+
+@media (max-width: 704px) {
+  .container-process__youtube-logo {
+    left: 200px;
+  }
+
+  .container-process__feedback-logo {
+    left: 200px;
+  }
+
+  .container-process__telegram-logo {
+    left: 190px;
+  }
+}
+
+@media (max-width: 608px) {
+  .container-process__youtube-logo {
+    left: 170px;
+  }
+
+  .container-process__feedback-logo {
+    left: 190px;
+  }
+
+  .container-process__telegram-logo {
+    left: 170px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container-process__youtube-logo {
+    left: 140px;
+  }
+
+  .container-process__feedback-logo {
+    left: 160px;
+  }
+
+  .container-process__telegram-logo {
+    left: 140px;
+  }
+}
+
+@media (max-width: 478px) {
+  .container-process__youtube-logo {
+    left: 120px;
+  }
+
+  .container-process__feedback-logo {
+    left: 130px;
+  }
+
+  .container-process__telegram-logo {
+    left: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-process__youtube-logo {
+    left: 80px;
+  }
+
+  .container-process__feedback-logo {
+    left: 100px;
+  }
+
+  .container-process__telegram-logo {
+    left: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container-process__youtube-logo {
+    left: 70px;
+  }
+
+  .container-process__feedback-logo {
+    left: 100px;
+  }
+
+  .container-process__telegram-logo {
+    left: 80px;
   }
 }
