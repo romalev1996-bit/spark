@@ -1,0 +1,42 @@
+:root {
+  --background-clor-spark: #070b12;
+  --link-size20px: 20px;
+  --link-color-white: #ffffff;
+  --font-size-bold: bold;
+  --line-height: 150%;
+  --h1-color-white: #ffffff;
+  --h1-font-size: 76px;
+  --h1-line-height: 110%;
+  --p-fonts-size: 20px;
+  --p-color-white: #ffffff;
+  --hover-button-yellow: #fdcc33;
+  --active-button-yellow: #cda731;
+  --hover-button: #f9e27f;
+  --font-size-links: 24px;
+  --link-border-color: #c3c9e2;
+  --links-border-active: #8d93a8;
+  --h2-font-size: 60px;
+  --border-color-yellow: #fdcc33;
+  --color-h5: #fdcc33;
+  --size-h5: 32px;
+  --bacground-color-blue: #0e2740;
+  --line-height-120: 120%;
+  --font-weught: 400%;
+  --z-index: 1;
+  --linear-gradient: linear-gradient(
+    180deg,
+    rgba(27, 75, 114, 1),
+    rgba(13, 25, 45, 1)
+  );
+  --text-size: 25px;
+  --p-text-size: 36px;
+  --box-shadow: 4px 0 30px 5px #fdc000;
+  --line-height-100: 100%;
+  --link-size16: 16px;
+  --font-weight300: 300%;
+  --line-height-150: 150%;
+  --h2-fontsize-24: 24px;
+  --p-text-fonts32px: 32px;
+  --h3-size-48px: 48px;
+  --fonts-14px: 14px;
+}

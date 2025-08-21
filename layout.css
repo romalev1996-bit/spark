@@ -1,0 +1,47 @@
+body {
+  background-color: var(--background-clor-spark);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:hover {
+  transition: 0.5s;
+}
+
+.layout {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-fone {
+  background-image: url(header_img/spark_fone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+@media (max-width: 1190px) {
+  .layout {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-fone {
+    height: auto;
+  }
+}

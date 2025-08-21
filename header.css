@@ -1,0 +1,287 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+.header__spark-logo {
+  width: 86px;
+  height: 37px;
+}
+
+.header__table {
+  display: flex;
+  gap: 60px;
+}
+
+.header__link {
+  font-size: var(--link-size20px);
+  color: var(--link-color-white);
+  text-decoration: none;
+  font-weight: var(--font-size-bold);
+  line-height: var(--line-height);
+}
+
+.header__image-links {
+  display: none;
+}
+
+.header__link:hover {
+  color: var(--hover-button-yellow);
+}
+.header__link:active {
+  color: var(--active-button-yellow);
+}
+
+.container-text {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-text__h1 {
+  color: var(--link-color-white);
+  font-weight: var(--font-size-bold);
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+}
+
+.container-text__paragraf {
+  font-size: var(--p-fonts-size);
+  color: var(--p-color-white);
+  line-height: var(--line-height);
+  display: block;
+}
+
+.container-text__paragraf:nth-child(3) {
+  margin-top: 24px;
+}
+
+.container-text__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 255px;
+}
+.container-text__nav {
+  width: 510px;
+  height: 149px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.container-text__buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.container-text__catalog {
+  width: 190px;
+  height: 52px;
+  border-radius: 16px;
+  background-color: var(--hover-button-yellow);
+  cursor: pointer;
+  font-size: var(--font-size-links);
+  font-weight: var(--font-size-bold);
+}
+
+.container-text__catalog:hover {
+  background-color: var(--hover-button);
+}
+
+.container-text__catalog:active {
+  background-color: var(--active-button-yellow);
+}
+
+.container-text__consultation {
+  width: 279px;
+  height: 52px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: var(--font-size-links);
+  font-weight: var(--font-size-bold);
+  background-color: transparent;
+  color: var(--link-border-color);
+  border: 2px solid var(--link-border-color);
+}
+
+.container-text__consultation:hover {
+  border: 2px solid var(--link-color-white);
+  color: var(--link-color-white);
+}
+
+.container-text__consultation:active {
+  border: 2px solid var(--links-border-active);
+  color: var(--links-border-active);
+}
+
+.container-text__links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-text__media {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.container-text__links-icons {
+  width: 45px;
+  height: 45px;
+}
+.container-text__links-icons:hover {
+  filter: brightness(0) saturate(100%) invert(77%) sepia(16%) saturate(3256%)
+    hue-rotate(342deg) brightness(123%) contrast(83%);
+}
+
+.container-text__links-icons:active {
+  filter: brightness(0) saturate(100%) invert(66%) sepia(13%) saturate(1935%)
+    hue-rotate(10deg) brightness(92%) contrast(88%);
+}
+
+.container-block-image {
+  width: 1140px;
+  height: 395px;
+  display: flex;
+}
+
+.container-block-image__star-image {
+  width: 414px;
+  height: 395px;
+}
+
+@media (max-width: 1190px) {
+  .header {
+    width: 70vw;
+  }
+
+  .header__spark-logo {
+    width: 70px;
+    height: 20px;
+  }
+
+  .header__link {
+    font-weight: var(--font-size-bold);
+    font-size: var(--link-size16);
+    line-height: var(--line-height-150);
+  }
+
+  .container-text__h1 {
+    font-weight: var(--font-size-bold);
+    font-size: var(--h3-size-48px);
+  }
+
+  .container-text__paragraf {
+    font-weight: var(--font-weught);
+    font-size: var(--link-size16);
+    line-height: var(--line-height-150);
+  }
+
+  .container-text__buttons {
+    justify-content: flex-end;
+  }
+
+  .container-text__nav {
+    width: 70vw;
+  }
+
+  .container-text__catalog {
+    width: 160px;
+    height: 40px;
+    font-weight: var(--font-size-bold);
+    font-size: var(--p-fonts-size);
+    line-height: var(--line-height-100);
+  }
+
+  .container-text__consultation {
+    width: 240px;
+    height: 40px;
+    font-weight: var(--font-size-bold);
+    font-size: var(--p-fonts-size);
+    line-height: var(--line-height-100);
+  }
+
+  .container-text__links-icons {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-fone {
+    height: 400px;
+  }
+
+  .header__spark-logo {
+    width: 61px;
+    height: 23px;
+  }
+
+  .header {
+    width: 90vw;
+  }
+
+  .header__link {
+    background-image: url(header_img/burger.png);
+    width: 40px;
+    height: 24px;
+    display: none;
+  }
+
+  .header__image-links {
+    width: 40px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .container-text {
+    margin-top: 32px;
+  }
+
+  .container-text__h1 {
+    font-size: var(--p-text-size);
+  }
+
+  .container-text__paragraf {
+    font-size: var(--link-size16);
+  }
+
+  .container-text__nav {
+    width: 90vw;
+    gap: 15px;
+  }
+
+  .container-text__button {
+    height: 200px;
+  }
+
+  .container-text__catalog {
+    width: 140px;
+    height: 39px;
+    font-size: var(--link-size20px);
+    border-radius: 12px;
+    border: 2px;
+    padding: 8px 24px 8px 24px;
+  }
+
+  .container-text__consultation {
+    width: 214px;
+    height: 39px;
+    border-radius: 12px;
+    padding: 8px 24px 8px 24px;
+    font-size: var(--link-size20px);
+  }
+
+  .container-text__buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .container-text__links {
+    flex-direction: row;
+  }
+}

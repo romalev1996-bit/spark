@@ -1,0 +1,177 @@
+.footer-conteiner {
+  border-top: 1px solid var(--border-color-yellow);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content__links {
+  display: flex;
+  gap: 240px;
+  margin-top: 100px;
+}
+
+.footer-content__image-block {
+  width: 156px;
+  height: 52px;
+}
+.footer-content__image {
+  width: 156px;
+  height: 52px;
+}
+
+.footer-content__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-content__a {
+  font-weight: var(--font-weught);
+  font-size: var(--link-size16);
+  color: var(--link-color-white);
+  line-height: var(--line-height);
+  text-decoration: none;
+}
+
+.footer-content__a:hover {
+  color: var(--hover-button-yellow);
+}
+.footer-content__a:active {
+  color: var(--active-button-yellow);
+}
+
+.footer-content__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-content__image-telephone {
+  width: 19px;
+  height: 19px;
+}
+
+.footer-content__p {
+  font-weight: var(--font-weight300);
+  font-size: var(--link-size16);
+  line-height: var(--line-height);
+  color: var(--link-color-white);
+}
+
+.footer-content__number {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-content__mail {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-content__mail-image {
+  width: 19px;
+  height: 19px;
+}
+
+.footer-content__mail-p {
+  font-weight: var(--font-weight300);
+  font-size: var(--link-size16);
+  line-height: var(--line-height);
+  color: var(--link-color-white);
+}
+
+.footer-content__icon {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 60px;
+}
+
+.footer-content__a-href-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-content__icon-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-content__a-href:hover {
+  filter: brightness(0) saturate(100%) invert(77%) sepia(16%) saturate(3256%)
+    hue-rotate(342deg) brightness(123%) contrast(83%);
+}
+
+.footer-content__a-href:active {
+  filter: brightness(0) saturate(100%) invert(66%) sepia(13%) saturate(1935%)
+    hue-rotate(10deg) brightness(92%) contrast(88%);
+}
+
+.footer-content__end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 142px;
+}
+
+.footer-content__end-spark {
+  font-size: var(--link-size16);
+  line-height: var(--line-height);
+  color: var(--link-color-white);
+  font-weight: var(--font-weught);
+}
+
+@media (max-width: 1190px) {
+  .footer-content__links {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .footer-content__links-text {
+    text-align: center;
+  }
+
+  .footer-content__image-block,
+  .footer-content__image {
+    width: 86px;
+    height: 30px;
+  }
+
+  .footer-content__a {
+    font-size: var(--fonts-14px);
+  }
+
+  .footer-content__p,
+  .footer-content__mail-p {
+    font-size: var(--fonts-14px);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content__links {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    margin: auto;
+  }
+
+  .footer-content__ul {
+    align-items: center;
+  }
+
+  .footer-content__image-block {
+    margin: auto;
+  }
+
+  .footer-content__contact {
+    margin: auto;
+  }
+
+  .footer-content__end {
+    height: 50px;
+  }
+}
