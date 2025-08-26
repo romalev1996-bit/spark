@@ -169,8 +169,7 @@
 
 .mobile-menu__cross-img {
   position: absolute;
-
-  bottom: 760px;
+  top: 20px;
   right: 20px;
   width: 30px;
   height: 30px;

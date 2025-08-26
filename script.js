@@ -8,6 +8,7 @@ burger.addEventListener("click", () => {
   headerFone.style.opacity = "0";
   menu.style.display = "block";
   menu.style.opacity = "1";
+
   cross.style.display = "block";
 });
 
