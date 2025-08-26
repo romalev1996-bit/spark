@@ -155,8 +155,9 @@
 
 #mobile-menu {
   display: none;
+  padding: 200px 120px 350px 120px;
+  background-color: var(--script-bacground-color);
   position: relative;
-  bottom: 300px;
 }
 
 .mobile-menu__table {
@@ -168,11 +169,14 @@
 
 .mobile-menu__cross-img {
   position: absolute;
-  bottom: 350px;
+
+  bottom: 760px;
   right: 20px;
   width: 30px;
   height: 30px;
   cursor: pointer;
+  display: none;
+  z-index: 1;
 }
 
 .mobile-menu__header-link {
